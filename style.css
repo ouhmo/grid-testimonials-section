@@ -23,5 +23,84 @@
 body {
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--light-grayish-blue);
 }
 
+.container {
+    margin: 10% auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "v v g sw" "fw b b sw";
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .info-card {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.card .info-card img {
+    max-width: 43px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.card .info-card h2 {
+    font-weight: 500;
+}
+
+.card .info-card h3 {
+    opacity: 50%;
+    font-weight: 500;
+}
+
+.description-card {
+    margin:20px 10px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.quote-card {
+    margin:0 10px;
+    font-weight: 600;
+    opacity: 70%;
+    padding-bottom: 8px;
+}
+
+
+.violet-card{
+    grid-area: v;
+    background-color: var(--violet);
+    color: var(--white);
+}
+
+.gray-card {
+    grid-area: g;
+    background-color: var(--grayish-blue);
+    color: var(--white);
+}
+
+.first-white-card {
+    grid-area: fw;
+}
+
+
+.black-card {
+    grid-area: b;
+    background-color: var(--blackish-blue);
+    color: white;
+}
+
+.second-white-card {
+    grid-area: sw;
+}
